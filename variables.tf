@@ -4,6 +4,11 @@ variable "cloudwatch_log_group_name" {
   type        = string
 }
 
+variable "cloudwatch_enabled" {
+  description = "Enables CloudWatch logging for the trail. Defaults to true."
+  default     = true
+}
+
 variable "enabled" {
   description = "Enables logging for the trail. Defaults to true. Setting this to false will pause logging."
   default     = true
